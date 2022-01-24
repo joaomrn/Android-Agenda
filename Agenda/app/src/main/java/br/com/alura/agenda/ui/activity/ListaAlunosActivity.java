@@ -12,7 +12,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import br.com.alura.agenda.R;
-import br.com.alura.agenda.dao.AlunoDAO;
 import br.com.alura.agenda.model.Aluno;
 import br.com.alura.agenda.ui.ListaAlunosView;
 import br.com.alura.agenda.ui.adapter.ListaAlunosAdapter;
@@ -22,7 +21,6 @@ import static br.com.alura.agenda.ui.activity.ConstantesActivity.CHAVE_ALUNO;
 public class ListaAlunosActivity extends AppCompatActivity {
 
     private static final String TITULO_APPBAR = "Lista de Alunos";
-    private final AlunoDAO dao = new AlunoDAO();
     private ListaAlunosAdapter adapter;
     private ListaAlunosView listaAlunosView;
 
